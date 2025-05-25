@@ -69,17 +69,21 @@ html{
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
-    margin: auto;
+    margin: 80px auto 40px;
     text-align: center;
     border-radius: 40px;
+    position: relative;
+    z-index: 2;
 }
 .inicio .contenido-banner img{
-    margin-top: 40px;
+    margin-top: 20px;
     border: 10px solid #1CB698;
     display: block;
-    width: 80%;
-    margin: auto;
+    width: 70%;
+    margin: 0 auto 20px;
     border-radius: 100%;
+    position: relative;
+    z-index: 3;
 }
 .inicio .contenido-banner h1{
     margin-top: 40px;
@@ -109,7 +113,9 @@ html{
 .sobremi{
     background-color: #1e2326;
     color: #fff;
-    padding: 50px 20px;
+    padding: 100px 20px 50px;
+    position: relative;
+    z-index: 1;
 }
 .sobremi .contenido-seccion{
     max-width: 1100px;
@@ -591,7 +597,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -711,5 +717,122 @@ footer .arriba{
     }
     .contacto .fila .col{
         width: 100%;
+    }
+}
+
+/* Estilos para el mapa y contacto */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.map-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(28, 182, 152, 0.9);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-overlay h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Eliminar estilos no deseados del ícono de ubicación */
+.map-overlay h3 i {
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+.map-overlay p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.contact-info {
+    background: #252A2E;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-item i {
+    font-size: 1.5em;
+    color: #1CB698;
+    margin-top: 5px;
+    min-width: 25px;
+}
+
+.info-item h4 {
+    margin: 0 0 5px 0;
+    color: #1CB698;
+    font-size: 1em;
+}
+
+.info-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.95em;
+    word-break: break-all;
+}
+
+.info-item a:hover {
+    color: #1CB698;
+    text-decoration: underline;
+}
+
+/* Ajustes responsivos para el mapa */
+@media (max-width: 768px) {
+    .map-container {
+        height: 300px;
+    }
+    
+    .map-overlay {
+        bottom: 10px;
+        left: 10px;
+        padding: 10px 15px;
+    }
+    
+    .contact-info {
+        padding: 20px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        gap: 5px;
     }
 }

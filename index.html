@@ -43,7 +43,7 @@
                 <a href="https://github.com/carlosmaumarty17"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.hackerrank.com/profile/carlosmaumarty17"><i class="fa-brands fa-hackerrank"></i></a>
                 <a href="https://www.facebook.com/carlosmaumarty"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://w.app/akVe1B"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/573137356420?text=Hola%20Carlos,%20estoy%20muy%20interesado%20en%20tu%20perfil%20profesional.%20¡Me%20encantaría%20conocerte%20mejor%20y%20explorar%20posibles%20oportunidades!" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.linkedin.com/in/carlos-mauricio-martinez-perez-28b769123/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
@@ -79,7 +79,7 @@
                         </li>
                         <li>
                             <strong>Cargo</strong>
-                            <span>DESARROLLADOR FREELANCE</span>
+                            <span>Analista de Tecnología</span>
                         </li>
                     </ul>
                 </div>
@@ -351,7 +351,7 @@
                     <div class="overlay">
                         <h3>Aplicación de E-commerce</h3>
                         <span>React</span><span>Node.js</span><span>MongoDB</span>
-                        <a href="https://github.com/carlosmaumarty17/E-commerce">Ver Trabajo</a>
+                        <a href="https://github.com/carlosmaumarty17/Plataforma-e-commerce">Ver Trabajo</a>
                     </div>
 
                 </div>
@@ -375,34 +375,42 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" id="nombre" placeholder="Tú Nombre">
-                    <input type="text" id="telefono" placeholder="Número telefónico">
-                    <input type="email" id="email" placeholder="Dirección de correo">
-                    <input type="text" id="tema" placeholder="Tema">
-                    <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button id="enviarBtn">
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form id="formulario-contacto">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tú Nombre" required>
+                        <input type="text" id="telefono" name="telefono" placeholder="Número telefónico" required>
+                        <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
+                        <input type="text" id="tema" name="tema" placeholder="Tema" required>
+                        <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button type="submit" id="enviarBtn">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Medellin Antioquia Colombia
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamame: +57 3137356420 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: carlosmaumarty17@gmail.com cmartinezperez@correo.unicordoba.edu.com
-                            </li>
-                        </ul>
+                    <div class="map-container">
+                        <div id="map"></div>
+                        <div class="map-overlay">
+                            <h3><i class="fa-solid fa-location-dot"></i> Ubicación</h3>
+                            <p>Medellín, Antioquia, Colombia</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <a href="tel:+573137356420">+57 313 735 6420</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:carlosmaumarty17@gmail.com">carlosmaumarty17@gmail.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -418,7 +426,7 @@
             <a href="https://github.com/carlosmaumarty17"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.hackerrank.com/profile/carlosmaumarty17"><i class="fa-brands fa-hackerrank"></i></a>
             <a href="https://www.facebook.com/carlosmaumarty"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://w.app/akVe1B"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/573137356420?text=Hola%20Carlos,%20estoy%20muy%20interesado%20en%20tu%20perfil%20profesional.%20¡Me%20encantaría%20conocerte%20mejor%20y%20explorar%20posibles%20oportunidades!" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/carlos-mauricio-martinez-perez-28b769123/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </div>
@@ -428,54 +436,208 @@
         <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por CARLOS MAURICIO MARTINEZ PEREZ</p>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    // Inicializar EmailJS con tu User ID
+    (function() {
+        emailjs.init('N-D25aobQE40iYJpE'); // User ID de EmailJS
+    })();
+
+    // Esperar a que el DOM esté completamente cargado
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('formulario-contacto');
+        if (form) {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevenir el envío normal del formulario
+                enviarEmail();
+            });
+        }
+    });
+
+    function enviarEmail() {
+        const nombre = document.getElementById('nombre').value;
+        const telefono = document.getElementById('telefono').value;
+        const email = document.getElementById('email').value;
+        const tema = document.getElementById('tema').value;
+        const mensaje = document.getElementById('mensaje').value;
+        const enviarBtn = document.getElementById('enviarBtn');
+        const icono = document.querySelector('#enviarBtn i');
+
+        // Validación de campos vacíos
+        if (!nombre || !telefono || !email || !tema || !mensaje) {
+            alert('Por favor, rellena todos los campos antes de enviar.');
+            return;
+        }
+
+        // Mostrar indicador de carga
+        enviarBtn.disabled = true;
+        enviarBtn.innerHTML = 'Enviando...';
+        if(icono) icono.style.display = 'none';
+
+        const templateParams = {
+            from_name: nombre,
+            from_email: email,
+            to_name: 'Carlos Martinez',
+            subject: tema,
+            message: mensaje,
+            reply_to: email,
+            phone: telefono
+        };
+
+        // Enviar el correo usando EmailJS
+        emailjs.send("service_ya7cmfp", "template_wv0bz64", templateParams)
+            .then(function(response) {
+                alert('¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.');
+                limpiarFormulario();
+            }, function(error) {
+                console.error('Error al enviar el correo:', error);
+                alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
+            })
+            .finally(() => {
+                // Restaurar el botón
+                enviarBtn.disabled = false;
+                enviarBtn.innerHTML = 'Enviar Mensaje ';
+                if(icono) {
+                    const nuevoIcono = document.createElement('i');
+                    nuevoIcono.className = 'fa-solid fa-paper-plane';
+                    enviarBtn.appendChild(nuevoIcono);
+                }
+            });
+    }
+
+
+    function limpiarFormulario() {
+        const form = document.getElementById('formulario-contacto');
+        if (form) {
+            form.reset(); // Esto limpiará todos los campos del formulario
+            
+            // Opcional: Si quieres asegurarte de que los placeholders se muestren correctamente
+            const inputs = form.querySelectorAll('input, textarea');
+            inputs.forEach(input => {
+                input.blur(); // Esto asegura que los placeholders se muestren
+            });
+        }
+    }
+</script>
+    <!-- Google Maps API -->
     <script>
-        (function() {
-            emailjs.init("servicio_5r0uwfw"); // Reemplaza con tu User ID de EmailJS
-        })();
+        // Función para inicializar el mapa
+        function initMap() {
+            // Coordenadas de Medellín, Colombia
+            const medellin = { lat: 6.2442, lng: -75.5812 };
+            
+            // Crear el mapa centrado en Medellín
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 13,
+                center: medellin,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#444444"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "color": "#f2f2f2"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 45
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "color": "#1cb698"
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    }
+                ]
+            });
 
-        document.getElementById('enviarBtn').addEventListener('click', enviarEmail);
-
-        function enviarEmail() {
-            const nombre = document.getElementById('nombre').value;
-            const telefono = document.getElementById('telefono').value;
-            const email = document.getElementById('email').value;
-            const tema = document.getElementById('tema').value;
-            const mensaje = document.getElementById('mensaje').value;
-
-            // Validación de campos vacíos
-            if (!nombre || !telefono || !email || !tema || !mensaje) {
-                alert('Por favor, rellena todos los campos antes de enviar.');
-                return; // Detiene la ejecución si hay campos vacíos
-            }
-
-            const templateParams = {
-                from_name: nombre,
-                to_name: 'Carlos Martinez',
-                subject: tema,
-                message: mensaje,
-                reply_to: email,
-                phone: telefono
-            };
-
-            emailjs .send( " servicio_5r0uwfw " , " plantilla_6e5y7am " ) ;
-                .then(function(response) {
-                    alert('Mensaje enviado con éxito!', response.status, response.text);
-                    // Limpiar los campos del formulario
-                    limpiarFormulario();
-                }, function(error) {
-                    alert('Error al enviar el mensaje: ', error);
-                });
+            // Agregar un marcador en Medellín
+            new google.maps.Marker({
+                position: medellin,
+                map: map,
+                title: 'Medellín, Colombia',
+                icon: {
+                    url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+                }
+            });
         }
-
-        function limpiarFormulario() {
-            document.getElementById('nombre').value = '';
-            document.getElementById('telefono').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('tema').value = '';
-            document.getElementById('mensaje').value = '';
-        }
+    </script>
+    <!-- Cargar la API de Google Maps -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap">
     </script>
 </body>
 </html>
