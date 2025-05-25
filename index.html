@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PORTAFOLIO PERSONAL ING CARLOS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">CARLOS MARTINEZ</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>CARLOS MARTINEZ</h1>
+            <h2>Ingeniero de Sistemas - Experto en Desarrollo web / Programacion</h2>
+            <div class="redes">
+                <a href="https://github.com/carlosmaumarty17"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.hackerrank.com/profile/carlosmaumarty17"><i class="fa-brands fa-hackerrank"></i></a>
+                <a href="https://www.facebook.com/carlosmaumarty"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://w.app/akVe1B"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/carlos-mauricio-martinez-perez-28b769123/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy carlos Martinez.</span> Ingeniero de sistemas con 5 años de experiencia en desarrollo de aplicaciones web, diseño y programación de sitios web. habilidad para liderar proyectos tecnológicos, mejorando competitividad y calidad de vida. reconocido por alcanzar metas clave en desarrollo de software, liderando la implementación de soluciones que mejoraron la eficiencia en un 30%. ascendí a líder de proyecto tras exitoso diseño de una plataforma web innovadora. recibí beca académica por excelencia y reconocimiento por investigación en ciberseguridad. comprometido con la mejora continua, trabajo en equipo y constante actualización en ciberseguridad, bases de datos y soluciones en la nube. también soy ingeniero de soporte en TI. implementé estrategias que optimizaron procesos y generaron un impacto positivo en cada empresa en la que he trabajado. busco nuevas oportunidades para seguir creciendo y aportando valor a las organizaciones y empresas, aplicando conocimientos en big data, inteligencia artificial, y gestión de proyectos ágiles.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            31-Octubre-1997
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 313 735 6420
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            carlosmaumarty17@gmail.com
+                        </li>
+                       
+                        <li>
+                            <strong>Dirección</strong>
+                            Medellin Antioquia - Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>DESARROLLADOR FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-school"></i>
+                            <span>ESTUDIAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>IA</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://drive.google.com/file/d/1WPmAMHa4a1zL5mKG-bX681ycEKDZmN5m/view?usp=sharing" download="Carlos_Martinez_CV.pdf">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+            
+            
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MYSQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Diseño y programacion web</h4>
+                        <span class="casa">Universidad de Cordoba</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>En este curso, aprendí los principios fundamentales del diseño web y la programación. Cubrió desde el diseño responsivo y la creación de interfaces intuitivas hasta el desarrollo backend con tecnologías como HTML, CSS, JavaScript y frameworks modernos. Además, se abordaron temas de accesibilidad y optimización para una mejor experiencia de usuario.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Python para el analisis de datos</h4>
+                        <span class="casa">Universidad de Cordoba</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Este curso me permitió desarrollar habilidades avanzadas en Python, centrándome en el análisis y visualización de datos. Aprendí a manipular grandes conjuntos de datos, aplicar técnicas estadísticas, y utilizar bibliotecas como Pandas y Matplotlib para generar informes detallados y visualizaciones efectivas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Software</h4>
+                        <span class="casa">Hackerran</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>En este curso, adquirí una comprensión integral de los principios y prácticas en ingeniería de software. Cubrimos desde el desarrollo ágil y la gestión de proyectos hasta el diseño de sistemas y la garantía de calidad. Aprendí a utilizar herramientas y técnicas para crear software eficiente, escalable y mantenible, enfocándome en el ciclo completo de vida del desarrollo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador FrontEnd </h4>
+                        <span class="casa">Smart Talent</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>En SmartTalent, me encargué de diseñar y desarrollar interfaces de usuario interactivas y responsivas. Trabajé con HTML, CSS y JavaScript para crear experiencias web intuitivas y visualmente atractivas. Colaboré estrechamente con diseñadores y desarrolladores back-end para implementar soluciones técnicas que mejoraran la funcionalidad y el rendimiento del sitio. Además, optimicé la compatibilidad entre navegadores y dispositivos, asegurando una experiencia uniforme para todos los usuarios.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador de sitios web HTML, CSS, JAVASCRIPT BOOTSTRAP</h4>
+                        <span class="casa">Agencia Pública de Empleo SENA</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Desarrollador de sitios web por medio de plataformas como: wordpress - wix, también usando programación como html5, css3, Javascript, php, bases de datos, etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Java</h4>
+                        <span class="casa">Universidad de Córdoba (CO)</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Colaboración en equipos de desarrollo: Trabajar en estrecha colaboración con otros desarrolladores, diseñadores y profesionales de TI para lograr los objetivos del proyecto. Participar en reuniones, revisiones de código y sesiones de planificación. Participación en la mejora continua del proceso de desarrollo de software.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Trabajo1.png" alt="">
+                    <div class="overlay">
+                        <h3>Campaña de Marketing Visual</h3>
+                        <span>After Effects</span><span>Premiere Pro</span><span>Illustrator</span>
+                        <a href="https://mypimes.pymergia.org/?gad_source=1&gclid=CjwKCAjw2Je1BhAgEiwAp3KY7yMCtweBIhEAEO2E-p1iYvUnVcHI3NGvxDSPTZukoLAt1fwv16l8aRoCxmcQAvD_BwE">Ver Trabajo</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/trabajo2.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Reservas Hoteleras</h3>
+                        <span>Python</span><span>Django</span><span>PostgreSQL</span>
+                        <a href="https://github.com/carlosmaumarty17/hotel_premium/tree/main">Ver Trabajo</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/trabajo6.png" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación de Chat en Tiempo Real</h3>
+                        <span>Vue.js</span><span>Socket.io</span><span>Express</span>
+                        <a href="https://github.com/carlosmaumarty17/Aplicacion-Chat-Tiempo-Real">Ver Trabajo</a>
+                    </div>
+
+                </div>
+                <div class="proyecto">
+                    <img src="img/trabajo7.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de UI/UX para App Móvil</h3>
+                        <span>Figma</span><span>Sketch</span><span>Adobe XD</span>
+                        <a href="https://uxcam.com/es/blog/diseno-ux-para-moviles/">Ver Trabajo</a>
+                    </div>
+
+                </div>
+                <div class="proyecto">
+                    <img src="img/Trabajo10.png" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación de E-commerce</h3>
+                        <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        <a href="https://github.com/carlosmaumarty17/E-commerce">Ver Trabajo</a>
+                    </div>
+
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Plataforma de Aprendizaje Online</h3>
+                        <span>Angular</span><span>TypeScript</span><span>Firebase</span>
+                        <a href="https://www.odoo.com/es_ES/app/elearning?utm_source=google&utm_medium=cpc&utm_campaign=CO-ES-eLearning_App-Specific-Values-Broad&gad_source=1&gclid=CjwKCAjw2Je1BhAgEiwAp3KY72DPQqAI8pUAW-hCFCRQi6Bs9T5vnUtDfar2aSyGM8ssUleq57XBwxoCPu8QAvD_BwE">Ver Trabajo</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" id="nombre" placeholder="Tú Nombre">
+                    <input type="text" id="telefono" placeholder="Número telefónico">
+                    <input type="email" id="email" placeholder="Dirección de correo">
+                    <input type="text" id="tema" placeholder="Tema">
+                    <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button id="enviarBtn">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Medellin Antioquia Colombia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: +57 3137356420 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: carlosmaumarty17@gmail.com cmartinezperez@correo.unicordoba.edu.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/carlosmaumarty17"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.hackerrank.com/profile/carlosmaumarty17"><i class="fa-brands fa-hackerrank"></i></a>
+            <a href="https://www.facebook.com/carlosmaumarty"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://w.app/akVe1B"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/carlos-mauricio-martinez-perez-28b769123/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    </footer>
+
+    <footer>
+        <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por CARLOS MAURICIO MARTINEZ PEREZ</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("servicio_5r0uwfw"); // Reemplaza con tu User ID de EmailJS
+        })();
+
+        document.getElementById('enviarBtn').addEventListener('click', enviarEmail);
+
+        function enviarEmail() {
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const email = document.getElementById('email').value;
+            const tema = document.getElementById('tema').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Validación de campos vacíos
+            if (!nombre || !telefono || !email || !tema || !mensaje) {
+                alert('Por favor, rellena todos los campos antes de enviar.');
+                return; // Detiene la ejecución si hay campos vacíos
+            }
+
+            const templateParams = {
+                from_name: nombre,
+                to_name: 'Carlos Martinez',
+                subject: tema,
+                message: mensaje,
+                reply_to: email,
+                phone: telefono
+            };
+
+            emailjs .send( " servicio_5r0uwfw " , " plantilla_6e5y7am " ) ;
+                .then(function(response) {
+                    alert('Mensaje enviado con éxito!', response.status, response.text);
+                    // Limpiar los campos del formulario
+                    limpiarFormulario();
+                }, function(error) {
+                    alert('Error al enviar el mensaje: ', error);
+                });
+        }
+
+        function limpiarFormulario() {
+            document.getElementById('nombre').value = '';
+            document.getElementById('telefono').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('tema').value = '';
+            document.getElementById('mensaje').value = '';
+        }
+    </script>
+</body>
+</html>
