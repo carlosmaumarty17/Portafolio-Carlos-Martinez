@@ -13,7 +13,7 @@ Desde desarrollo web hasta soluciones innovadoras, cada proyecto refleja mi pasi
 
 ## 🔗 ¡Explora mis proyectos y cuéntame qué piensas!
 
-[👉 Visita mi portafolio aquí](https://tulink.com) <!-- Reemplaza con el enlace real -->
+[👉 Visita mi portafolio aquí](portafolio-carlos-martinez-2025.netlify.app) <!-- Reemplaza con el enlace real -->
 
 ---
 
