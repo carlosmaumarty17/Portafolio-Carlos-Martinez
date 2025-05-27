@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuración básica del documento HTML -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Asegura la compatibilidad con Internet Explorer (modo edge) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para diseño responsive -->
+    
+    <!-- Enlace a Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>PORTAFOLIO PERSONAL ING CARLOS</title>
+    
+    <title>PORTAFOLIO PERSONAL ING CARLOS</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    
+    <!-- Enlace a la hoja de estilos CSS principal -->
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
+    <!-- Esta sección contiene el logo y la navegación principal del sitio. -->
+    <!-- La clase 'contenedor-header' ayuda a fijar el menú en la parte superior. -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">CARLOS MARTINEZ</a>
+                <a href="#">CARLOS MARTINEZ</a> <!-- Logo del sitio, enlaza al inicio -->
             </div>
-            <nav id="nav">
+            <nav id="nav"> <!-- Navegación principal -->
                 <ul>
+                    <!-- Enlaces a las diferentes secciones de la página. La función seleccionar() (de script.js) cierra el menú responsive. -->
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
@@ -25,6 +34,7 @@
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
+            <!-- Icono de menú para dispositivos móviles (hamburguesa). Llama a mostrarOcultarMenu() (de script.js) -->
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -32,14 +42,16 @@
     </div>
 
     <!-- SECCION INICIO -->
+    <!-- Sección de bienvenida principal con imagen, nombre, título y redes sociales. -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
+                <img src="img/hero.png" alt="Imagen de Carlos Martinez"> <!-- Imagen principal del portafolio -->
             </div>
             <h1>CARLOS MARTINEZ</h1>
             <h2>Ingeniero de Sistemas - Experto en Desarrollo web / Programacion</h2>
             <div class="redes">
+                <!-- Enlaces a perfiles en redes sociales y plataformas profesionales -->
                 <a href="https://github.com/carlosmaumarty17"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.hackerrank.com/profile/carlosmaumarty17"><i class="fa-brands fa-hackerrank"></i></a>
                 <a href="https://www.facebook.com/carlosmaumarty"><i class="fa-brands fa-facebook-f"></i></a>
@@ -50,12 +62,13 @@
     </section>
 
     <!-- SECCION SOBRE MI -->
+    <!-- Presentación personal, datos de contacto e intereses. -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy carlos Martinez.</span> Ingeniero de sistemas con 5 años de experiencia en desarrollo de aplicaciones web, diseño y programación de sitios web. habilidad para liderar proyectos tecnológicos, mejorando competitividad y calidad de vida. reconocido por alcanzar metas clave en desarrollo de software, liderando la implementación de soluciones que mejoraron la eficiencia en un 30%. ascendí a líder de proyecto tras exitoso diseño de una plataforma web innovadora. recibí beca académica por excelencia y reconocimiento por investigación en ciberseguridad. comprometido con la mejora continua, trabajo en equipo y constante actualización en ciberseguridad, bases de datos y soluciones en la nube. también soy ingeniero de soporte en TI. implementé estrategias que optimizaron procesos y generaron un impacto positivo en cada empresa en la que he trabajado. busco nuevas oportunidades para seguir creciendo y aportando valor a las organizaciones y empresas, aplicando conocimientos en big data, inteligencia artificial, y gestión de proyectos ágiles.</p>
+            <p><span>Hola, soy Carlos Martinez.</span> Ingeniero de sistemas con 5 años de experiencia en desarrollo de aplicaciones web, diseño y programación de sitios web. habilidad para liderar proyectos tecnológicos, mejorando competitividad y calidad de vida. reconocido por alcanzar metas clave en desarrollo de software, liderando la implementación de soluciones que mejoraron la eficiencia en un 30%. ascendí a líder de proyecto tras exitoso diseño de una plataforma web innovadora. recibí beca académica por excelencia y reconocimiento por investigación en ciberseguridad. comprometido con la mejora continua, trabajo en equipo y constante actualización en ciberseguridad, bases de datos y soluciones en la nube. también soy ingeniero de soporte en TI. implementé estrategias que optimizaron procesos y generaron un impacto positivo en cada empresa en la que he trabajado. busco nuevas oportunidades para seguir creciendo y aportando valor a las organizaciones y empresas, aplicando conocimientos en big data, inteligencia artificial, y gestión de proyectos ágiles.</p>
 
-            <div class="fila">
+            <div class="fila"> <!-- Estructura de dos columnas (flex) para datos personales e intereses. -->
                 <!-- datos personales -->
                 <div class="col">
                     <h3>Datos Personales</h3>
@@ -87,7 +100,7 @@
                 <!-- intereses -->
                 <div class="col">
                     <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
+                    <div class="contenedor-intereses"> <!-- Contenedor flex para mostrar los intereses con iconos. -->
                         <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
                             <span>JUEGOS</span>
@@ -125,10 +138,11 @@
                 </div>
             </div>
             
+            <!-- Botón para descargar el CV. El span interno .overlay se usa para un efecto visual en CSS. -->
             <a href="https://drive.google.com/file/d/1WPmAMHa4a1zL5mKG-bX681ycEKDZmN5m/view?usp=sharing" download="Carlos_Martinez_CV.pdf">
                 <button>
                     Descargar CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
+                    <span class="overlay"></span> 
                 </button>
             </a>
             
@@ -137,18 +151,21 @@
     </section>
 
     <!-- SECCION SKILLS -->
+    <!-- Muestra de habilidades técnicas y profesionales con barras de progreso animadas (controladas por script.js). -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
             <h2>Skills</h2>
-            <div class="fila">
+            <div class="fila"> <!-- Estructura de dos columnas (flex) para habilidades técnicas y profesionales. -->
                 <!-- Technical Skill -->
                 <div class="col">
                     <h3>Technical Skills</h3>
+                    <!-- Cada 'skill' contiene el nombre, la barra de progreso y el porcentaje. -->
+                    <!-- La div con clase 'progreso' es la que se anima con JavaScript para mostrar el nivel. -->
                     <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
+                            <div class="progreso"> 
+                                <span>75%</span> 
                             </div>
                         </div>
                     </div>
@@ -234,10 +251,14 @@
     </section>
 
     <!-- SECCION CURRICULUM -->
+    <!-- Presenta la educación y experiencia laboral en un formato de línea de tiempo. -->
+    <!-- La estructura de 'fila' con 'col izquierda' y 'col derecha' crea dos columnas. -->
+    <!-- Cada 'item' (izq/der) es una entrada en la línea de tiempo. -->
+    <!-- Los 'conectori'/'conectord' y 'circuloi'/'circulod' son elementos visuales para la línea de tiempo (CSS). -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
             <h2>Curriculum</h2>
-            <div class="fila">
+            <div class="fila"> 
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
@@ -245,7 +266,7 @@
                         <span class="casa">Universidad de Cordoba</span>
                         <span class="fecha">2022 - 2023</span>
                         <p>En este curso, aprendí los principios fundamentales del diseño web y la programación. Cubrió desde el diseño responsivo y la creación de interfaces intuitivas hasta el desarrollo backend con tecnologías como HTML, CSS, JavaScript y frameworks modernos. Además, se abordaron temas de accesibilidad y optimización para una mejor experiencia de usuario.</p>
-                        <div class="conectori">
+                        <div class="conectori"> 
                             <div class="circuloi"></div>
                         </div>
                     </div>
@@ -269,8 +290,6 @@
                     </div>
                 </div>
 
-                
-
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
@@ -278,7 +297,7 @@
                         <span class="casa">Smart Talent</span>
                         <span class="fecha">2022 - 2023</span>
                         <p>En SmartTalent, me encargué de diseñar y desarrollar interfaces de usuario interactivas y responsivas. Trabajé con HTML, CSS y JavaScript para crear experiencias web intuitivas y visualmente atractivas. Colaboré estrechamente con diseñadores y desarrolladores back-end para implementar soluciones técnicas que mejoraran la funcionalidad y el rendimiento del sitio. Además, optimicé la compatibilidad entre navegadores y dispositivos, asegurando una experiencia uniforme para todos los usuarios.</p>
-                        <div class="conectord">
+                        <div class="conectord"> 
                             <div class="circulod"></div>
                         </div>
                     </div>
@@ -306,13 +325,17 @@
     </section>
 
     <!-- SECCION PORTFOLIO -->
+    <!-- Galería de proyectos con imágenes, descripciones y enlaces. -->
+    <!-- La clase 'galeria' es un contenedor flex para los proyectos. -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
-            <div class="galeria">
+            <div class="galeria"> 
+                <!-- Cada 'proyecto' es una tarjeta que contiene una imagen y un 'overlay'. -->
+                <!-- El 'overlay' se muestra al pasar el cursor y contiene detalles del proyecto. -->
                 <div class="proyecto">
-                    <img src="img/Trabajo1.png" alt="">
-                    <div class="overlay">
+                    <img src="img/Trabajo1.png" alt="Campaña de Marketing Visual">
+                    <div class="overlay"> 
                         <h3>Campaña de Marketing Visual</h3>
                         <span>After Effects</span><span>Premiere Pro</span><span>Illustrator</span>
                         <a href="https://mypimes.pymergia.org/?gad_source=1&gclid=CjwKCAjw2Je1BhAgEiwAp3KY7yMCtweBIhEAEO2E-p1iYvUnVcHI3NGvxDSPTZukoLAt1fwv16l8aRoCxmcQAvD_BwE">Ver Trabajo</a>
@@ -320,7 +343,7 @@
                 </div>
 
                 <div class="proyecto">
-                    <img src="img/trabajo2.png" alt="">
+                    <img src="img/trabajo2.png" alt="Sistema de Reservas Hoteleras">
                     <div class="overlay">
                         <h3>Sistema de Reservas Hoteleras</h3>
                         <span>Python</span><span>Django</span><span>PostgreSQL</span>
@@ -329,39 +352,35 @@
                 </div>
 
                 <div class="proyecto">
-                    <img src="img/trabajo6.png" alt="">
+                    <img src="img/trabajo6.png" alt="Aplicación de Chat en Tiempo Real">
                     <div class="overlay">
                         <h3>Aplicación de Chat en Tiempo Real</h3>
                         <span>Vue.js</span><span>Socket.io</span><span>Express</span>
                         <a href="https://github.com/carlosmaumarty17/Aplicacion-Chat-Tiempo-Real">Ver Trabajo</a>
                     </div>
-
                 </div>
                 <div class="proyecto">
-                    <img src="img/trabajo7.png" alt="">
+                    <img src="img/trabajo7.png" alt="Diseño de UI/UX para App Móvil">
                     <div class="overlay">
                         <h3>Diseño de UI/UX para App Móvil</h3>
                         <span>Figma</span><span>Sketch</span><span>Adobe XD</span>
                         <a href="https://uxcam.com/es/blog/diseno-ux-para-moviles/">Ver Trabajo</a>
                     </div>
-
                 </div>
                 <div class="proyecto">
-                    <img src="img/Trabajo10.png" alt="">
+                    <img src="img/Trabajo10.png" alt="Aplicación de E-commerce">
                     <div class="overlay">
                         <h3>Aplicación de E-commerce</h3>
                         <span>React</span><span>Node.js</span><span>MongoDB</span>
                         <a href="https://github.com/carlosmaumarty17/Plataforma-e-commerce">Ver Trabajo</a>
                     </div>
-
                 </div>
                 <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
+                    <img src="img/p6.jpg" alt="Plataforma de Aprendizaje Online">
                     <div class="overlay">
                         <h3>Plataforma de Aprendizaje Online</h3>
                         <span>Angular</span><span>TypeScript</span><span>Firebase</span>
                         <a href="https://www.odoo.com/es_ES/app/elearning?utm_source=google&utm_medium=cpc&utm_campaign=CO-ES-eLearning_App-Specific-Values-Broad&gad_source=1&gclid=CjwKCAjw2Je1BhAgEiwAp3KY72DPQqAI8pUAW-hCFCRQi6Bs9T5vnUtDfar2aSyGM8ssUleq57XBwxoCPu8QAvD_BwE">Ver Trabajo</a>
-
                     </div>
                 </div>
             </div>
@@ -369,13 +388,15 @@
     </section>
 
     <!-- SECCION CONTACTO -->
+    <!-- Formulario de contacto, mapa de ubicación e información de contacto adicional. -->
+    <!-- La 'fila' divide la sección en dos columnas: formulario y mapa/info. -->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
+            <div class="fila"> 
+                <!-- Columna del Formulario -->
                 <div class="col">
-                    <form id="formulario-contacto">
+                    <form id="formulario-contacto"> <!-- Formulario para enviar mensajes, gestionado por EmailJS. -->
                         <input type="text" id="nombre" name="nombre" placeholder="Tú Nombre" required>
                         <input type="text" id="telefono" name="telefono" placeholder="Número telefónico" required>
                         <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
@@ -383,19 +404,21 @@
                         <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
                         <button type="submit" id="enviarBtn">
                             Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
+                            <span class="overlay"></span> <!-- Span para efecto hover en CSS. -->
                         </button>
                     </form>
                 </div>
-                <!-- Mapa -->
+                <!-- Columna del Mapa e Información de Contacto -->
                 <div class="col">
+                    <!-- Contenedor del Mapa de Google. El mapa se renderiza en la div#map. -->
                     <div class="map-container">
-                        <div id="map"></div>
-                        <div class="map-overlay">
+                        <div id="map"></div> 
+                        <div class="map-overlay"> <!-- Overlay con información de la ubicación sobre el mapa. -->
                             <h3><i class="fa-solid fa-location-dot"></i> Ubicación</h3>
                             <p>Medellín, Antioquia, Colombia</p>
                         </div>
                     </div>
+                    <!-- Información de contacto adicional (teléfono, email). -->
                     <div class="contact-info">
                         <div class="info-item">
                             <i class="fa-solid fa-mobile-screen"></i>
@@ -417,9 +440,10 @@
         </div>
     </section>
 
-    <!-- footer -->
+    <!-- FOOTER -->
+    <!-- Pie de página con enlaces a redes sociales y botón para volver al inicio. -->
     <footer>
-        <a href="#inicio" class="arriba">
+        <a href="#inicio" class="arriba"> <!-- Botón para subir al inicio de la página. -->
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
@@ -429,215 +453,258 @@
             <a href="https://wa.me/573137356420?text=Hola%20Carlos,%20estoy%20muy%20interesado%20en%20tu%20perfil%20profesional.%20¡Me%20encantaría%20conocerte%20mejor%20y%20explorar%20posibles%20oportunidades!" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/carlos-mauricio-martinez-perez-28b769123/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-    </div>
+        <!-- NOTA: Hay dos elementos <footer>. Usualmente, solo hay un <footer> por página. -->
+        <!-- Esto podría ser una elección de diseño o un error estructural. -->
+        <!-- Se asume que es intencional o será revisado. -->
     </footer>
 
-    <footer>
+    <footer> <!-- Este es el segundo elemento footer. Contiene el copyright. -->
         <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por CARLOS MAURICIO MARTINEZ PEREZ</p>
     </footer>
 
 
-
+<!-- Script principal del portafolio (controla animaciones, menú responsive, etc.) -->
 <script src="script.js"></script>
+
+<!-- ======== BLOQUE DE SCRIPT PARA EMAILJS ======== -->
+<!-- Integración de EmailJS para la funcionalidad del formulario de contacto. -->
+<!-- Se carga la librería de EmailJS desde su CDN (Content Delivery Network). -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-    // Inicializar EmailJS con tu User ID
+    // Inicialización de EmailJS:
+    // Esta función auto-ejecutable configura EmailJS con el User ID público.
+    // Es NECESARIO reemplazar 'N-D25aobQE40iYJpE' con el User ID real de la cuenta de EmailJS.
+    // Esto permite que la página se comunique con el servicio de EmailJS.
     (function() {
-        emailjs.init('N-D25aobQE40iYJpE'); // User ID de EmailJS
+        // La función init vincula este sitio con tu cuenta en EmailJS usando tu User ID.
+        emailjs.init('N-D25aobQE40iYJpE'); 
     })();
 
-    // Esperar a que el DOM esté completamente cargado
+    // Espera a que el DOM (Document Object Model) esté completamente cargado:
+    // Esto asegura que el script no intente acceder a elementos HTML (como el formulario)
+    // antes de que estén disponibles en la página.
     document.addEventListener('DOMContentLoaded', function() {
-        const form = document.getElementById('formulario-contacto');
-        if (form) {
+        const form = document.getElementById('formulario-contacto'); // Obtiene el elemento del formulario por su ID.
+        if (form) { // Verifica si el formulario existe en la página.
+            // Event Listener para el envío del formulario:
+            // Cuando el usuario intenta enviar el formulario (evento 'submit'),
+            // se ejecuta la función anónima proporcionada.
             form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevenir el envío normal del formulario
-                enviarEmail();
+                event.preventDefault(); // Previene la acción por defecto del formulario (que sería recargar la página).
+                enviarEmail(); // Llama a la función personalizada para manejar el envío del correo.
             });
         }
     });
 
+    /**
+     * @function enviarEmail
+     * Función para enviar el email utilizando la librería EmailJS.
+     * - Recoge los datos ingresados en los campos del formulario.
+     * - Realiza una validación básica para asegurar que todos los campos estén completos.
+     * - Cambia el estado del botón de envío para indicar que el mensaje se está procesando ("Enviando...").
+     * - Define los parámetros que se enviarán a la plantilla de EmailJS (deben coincidir con las variables de la plantilla).
+     * - Utiliza `emailjs.send()` para enviar el correo a través del servicio y plantilla especificados.
+     * - Muestra alertas al usuario indicando el resultado (éxito o error).
+     * - Limpia el formulario si el envío fue exitoso.
+     * - Restaura el botón de envío a su estado original.
+     */
     function enviarEmail() {
+        // Obtención de los valores de cada campo del formulario.
         const nombre = document.getElementById('nombre').value;
         const telefono = document.getElementById('telefono').value;
         const email = document.getElementById('email').value;
         const tema = document.getElementById('tema').value;
         const mensaje = document.getElementById('mensaje').value;
-        const enviarBtn = document.getElementById('enviarBtn');
-        const icono = document.querySelector('#enviarBtn i');
+        const enviarBtn = document.getElementById('enviarBtn'); // Elemento del botón de envío.
+        const icono = document.querySelector('#enviarBtn i'); // Icono dentro del botón.
 
-        // Validación de campos vacíos
+        // Validación de campos: si alguno está vacío, muestra una alerta y detiene el proceso.
         if (!nombre || !telefono || !email || !tema || !mensaje) {
             alert('Por favor, rellena todos los campos antes de enviar.');
-            return;
+            return; // Detiene la función si la validación falla.
         }
 
-        // Mostrar indicador de carga
-        enviarBtn.disabled = true;
-        enviarBtn.innerHTML = 'Enviando...';
-        if(icono) icono.style.display = 'none';
+        // Actualización visual del botón para indicar carga.
+        enviarBtn.disabled = true; // Deshabilita el botón para evitar múltiples envíos.
+        enviarBtn.innerHTML = 'Enviando...'; // Cambia el texto del botón.
+        if(icono) icono.style.display = 'none'; // Oculta el icono del botón si existe.
 
+        // Parámetros de la plantilla de EmailJS:
+        // Estos nombres (ej. from_name, from_email) deben coincidir EXACTAMENTE 
+        // con las variables usadas en la plantilla de correo electrónico configurada en EmailJS.
         const templateParams = {
             from_name: nombre,
             from_email: email,
-            to_name: 'Carlos Martinez',
+            to_name: 'Carlos Martinez', // Nombre del destinatario (dueño del portafolio).
             subject: tema,
             message: mensaje,
-            reply_to: email,
+            reply_to: email, // Dirección de correo para responder.
             phone: telefono
         };
 
-        // Enviar el correo usando EmailJS
+        // Envío del correo:
+        // Se usa el Service ID y Template ID configurados en la cuenta de EmailJS.
+        // Es NECESARIO reemplazar "service_ya7cmfp" y "template_wv0bz64" con los IDs correctos del servicio y plantilla.
         emailjs.send("service_ya7cmfp", "template_wv0bz64", templateParams)
-            .then(function(response) {
+            .then(function(response) { // Se ejecuta si el correo se envía con éxito.
                 alert('¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.');
-                limpiarFormulario();
-            }, function(error) {
-                console.error('Error al enviar el correo:', error);
+                limpiarFormulario(); // Limpia los campos del formulario.
+            }, function(error) { // Se ejecuta si ocurre un error durante el envío.
+                console.error('Error al enviar el correo:', error); // Muestra el error en la consola del navegador.
                 alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
             })
-            .finally(() => {
-                // Restaurar el botón
+            .finally(() => { // Se ejecuta siempre, independientemente del resultado (éxito o error).
+                // Restaura el botón a su estado original.
                 enviarBtn.disabled = false;
                 enviarBtn.innerHTML = 'Enviar Mensaje ';
-                if(icono) {
+                if(icono) { // Si había un icono, se crea uno nuevo y se añade al botón.
                     const nuevoIcono = document.createElement('i');
-                    nuevoIcono.className = 'fa-solid fa-paper-plane';
+                    nuevoIcono.className = 'fa-solid fa-paper-plane'; // Asegúrate que las clases del icono son correctas.
                     enviarBtn.appendChild(nuevoIcono);
                 }
             });
     }
 
-
+    /**
+     * @function limpiarFormulario
+     * Función para limpiar/resetear los campos del formulario.
+     * Se llama típicamente después de que un correo se ha enviado exitosamente.
+     * También puede desenfocar los campos para asegurar que los placeholders se muestren correctamente.
+     */
     function limpiarFormulario() {
         const form = document.getElementById('formulario-contacto');
         if (form) {
-            form.reset(); // Esto limpiará todos los campos del formulario
+            form.reset(); // Método estándar para limpiar todos los campos de un formulario.
             
-            // Opcional: Si quieres asegurarte de que los placeholders se muestren correctamente
+            // Opcional: Quitar el foco de los inputs para que los placeholders se muestren si es necesario.
             const inputs = form.querySelectorAll('input, textarea');
             inputs.forEach(input => {
-                input.blur(); // Esto asegura que los placeholders se muestren
+                input.blur(); // Quita el foco del campo.
             });
         }
     }
 </script>
-    <!-- Google Maps API -->
-    <script>
-        // Función para inicializar el mapa
-        function initMap() {
-            // Coordenadas de Medellín, Colombia
-            const medellin = { lat: 6.2442, lng: -75.5812 };
-            
-            // Crear el mapa centrado en Medellín
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 13,
-                center: medellin,
-                styles: [
-                    {
-                        "featureType": "all",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
-                                "color": "#444444"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#f2f2f2"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 45
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.arterial",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#1cb698"
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    }
-                ]
-            });
+<!-- ======== FIN DEL BLOQUE DE SCRIPT PARA EMAILJS ======== -->
 
-            // Agregar un marcador en Medellín
-            new google.maps.Marker({
-                position: medellin,
-                map: map,
-                title: 'Medellín, Colombia',
-                icon: {
-                    url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+
+<!-- ======== BLOQUE DE SCRIPT PARA GOOGLE MAPS ======== -->
+<!-- Integración de la API de Google Maps para mostrar un mapa interactivo. -->
+<script>
+    /**
+     * @function initMap
+     * Función de inicialización del mapa de Google.
+     * Esta función es crucial y es invocada automáticamente por la API de Google Maps
+     * cuando el script de la API se carga completamente. Esto se especifica mediante el parámetro
+     * `callback=initMap` en la URL del script de la API de Google Maps.
+     * 
+     * Su propósito es:
+     * 1. Definir las coordenadas geográficas iniciales donde se centrará el mapa (en este caso, Medellín).
+     * 2. Crear una nueva instancia del objeto `google.maps.Map`, que representa el mapa interactivo.
+     *    - Se asocia con un elemento HTML específico (generalmente un `div`) mediante su ID (`document.getElementById("map")`).
+     *    - Configura opciones del mapa como el nivel de zoom inicial y el punto central del mapa.
+     * 3. Aplicar estilos personalizados al mapa para que coincida con el diseño general del sitio web.
+     *    Estos estilos pueden modificar colores, la visibilidad de diferentes tipos de características del mapa 
+     *    (como carreteras, puntos de interés, cuerpos de agua, etc.).
+     * 4. Añadir un marcador en la ubicación especificada para señalar un punto de interés particular (la ubicación del portafolio).
+     */
+    function initMap() {
+        // Coordenadas geográficas de Medellín, Colombia (Latitud, Longitud).
+        const medellin = { lat: 6.2442, lng: -75.5812 };
+        
+        // Creación del mapa:
+        // Se instancia un nuevo objeto `google.maps.Map`.
+        // El primer argumento es el elemento HTML (un div con id="map") donde se renderizará el mapa.
+        // El segundo argumento es un objeto que contiene las opciones de configuración para el mapa.
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13, // Nivel de zoom inicial. Un número mayor acerca más el mapa a la superficie.
+            center: medellin, // Coordenadas donde se centrará el mapa inicialmente.
+            // 'styles': Un array de objetos que define cómo se verá el mapa.
+            // Permite personalizar la apariencia de diferentes características ('featureType') del mapa 
+            // (como 'landscape', 'road', 'water', 'poi' - Puntos de Interés, etc.).
+            styles: [ 
+                // Ejemplo de regla de estilo: afecta a todas las geometrías de relleno.
+                {
+                    "featureType": "all", 
+                    "elementType": "geometry.fill", 
+                    "stylers": [ { "visibility": "on" } ]
+                },
+                // Reglas de estilo específicas para diferentes características del mapa:
+                {
+                    "featureType": "administrative", // Fronteras administrativas, nombres de lugares.
+                    "elementType": "labels.text.fill", // Color del texto de las etiquetas.
+                    "stylers": [ { "color": "#444444" } ]
+                },
+                {
+                    "featureType": "landscape", // El terreno natural, como tierra y vegetación.
+                    "elementType": "all",
+                    "stylers": [ { "color": "#f2f2f2" } ] // Un color de fondo claro para el paisaje.
+                },
+                {
+                    "featureType": "poi", // Puntos de Interés (negocios, parques, etc.).
+                    "elementType": "all",
+                    "stylers": [ { "visibility": "off" } ] // Oculta los puntos de interés.
+                },
+                {
+                    "featureType": "road", // Carreteras.
+                    "elementType": "all",
+                    "stylers": [
+                        { "saturation": -100 }, // Desatura las carreteras (las hace en escala de grises).
+                        { "lightness": 45 }     // Aclara las carreteras.
+                    ]
+                },
+                {
+                    "featureType": "road.highway", // Autopistas.
+                    "elementType": "all",
+                    "stylers": [ { "visibility": "simplified" } ] // Muestra una versión simplificada de las autopistas.
+                },
+                {
+                    "featureType": "road.arterial", // Vías arteriales.
+                    "elementType": "labels.icon", // Iconos de etiquetas en vías arteriales.
+                    "stylers": [ { "visibility": "off" } ] // Oculta estos iconos.
+                },
+                {
+                    "featureType": "transit", // Rutas y estaciones de transporte público.
+                    "elementType": "all",
+                    "stylers": [ { "visibility": "off" } ] // Oculta el transporte público.
+                },
+                {
+                    "featureType": "water", // Cuerpos de agua (ríos, lagos, océanos).
+                    "elementType": "all",
+                    "stylers": [
+                        { "color": "#1cb698" }, // Color del agua, coordinado con el tema del sitio.
+                        { "visibility": "on" }
+                    ]
                 }
-            });
-        }
-    </script>
-    <!-- Cargar la API de Google Maps -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap">
-    </script>
+            ]
+        });
+
+        // Creación y adición de un marcador en el mapa:
+        // Se instancia un nuevo objeto `google.maps.Marker`.
+        new google.maps.Marker({
+            position: medellin, // Coordenadas donde se colocará el marcador.
+            map: map, // Asocia este marcador con el mapa 'map' creado anteriormente. Obligatorio.
+            title: 'Medellín, Colombia', // Texto que aparece como tooltip al pasar el cursor sobre el marcador.
+            icon: { // Opcional: personalización del icono del marcador.
+                url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' // URL de un icono estándar de punto azul de Google Maps.
+            }
+        });
+    }
+</script>
+<!-- Carga asíncrona de la API de Google Maps: -->
+<!-- `async`: Permite que el navegador continúe renderizando el resto de la página mientras se descarga el script de la API en segundo plano. -->
+<!-- `defer`: Asegura que el script se ejecute solo después de que el análisis del HTML de la página esté completo, -->
+<!--          pero antes del evento DOMContentLoaded. Es útil para scripts que dependen del DOM pero no deben bloquearlo. -->
+<!-- `src`: La URL base de la API de Google Maps. -->
+<!--        - `key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg`: Es FUNDAMENTAL reemplazar 'AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg' -->
+<!--          con una clave de API de Google Maps válida y activa, que esté debidamente restringida para este proyecto/dominio. -->
+<!--          Sin una clave válida, el mapa podría no funcionar o mostrar errores. -->
+<!--        - `callback=initMap`: Este es un parámetro CRUCIAL. Le indica a la API de Google Maps que, una vez que -->
+<!--          el script de la API se haya cargado y esté listo para usarse, debe buscar y ejecutar una función -->
+<!--          global (accesible desde `window`) llamada `initMap`. Por esto, la función `initMap` debe estar definida -->
+<!--          en el ámbito global antes de que este script se ejecute o sea llamado por el callback. -->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap">
+</script>
+<!-- ======== FIN DEL BLOQUE DE SCRIPT PARA GOOGLE MAPS ======== -->
 </body>
 </html>

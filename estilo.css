@@ -1,289 +1,302 @@
+/* Importación de fuentes personalizadas desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+/* ESTILOS GLOBALES */
 *{
-    box-sizing: border-box;
-    font-family: 'Work Sans';
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el tamaño total del elemento */
+    font-family: 'Work Sans'; /* Fuente principal para todo el documento */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina paddings por defecto */
 }
 html{
-    /* me permite deslizar cuando hago clic en los links del menu */
+    /* Permite un desplazamiento suave al hacer clic en los enlaces del menú */
     scroll-behavior: smooth;
 }
-/* MENU */
+
+/* ESTILOS DEL MENU */
 .contenedor-header{
-    background: #1e2326;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
+    background: #1e2326; /* Color de fondo del encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Alineado en la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    z-index: 99; /* Asegura que el encabezado esté por encima de otros elementos */
 }
 .contenedor-header header{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+    max-width: 1100px; /* Ancho máximo del contenido del encabezado */
+    margin: auto; /* Centrado automático */
+    display: flex; /* Habilita Flexbox */
+    justify-content: space-between; /* Distribuye espacio entre logo y navegación */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 15px 20px; /* Relleno interno */
 }
 .contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: #1CB698;
-    text-decoration: none;
+    font-family: 'Righteous'; /* Fuente específica para el logo */
+    font-size: 36px; /* Tamaño de fuente del logo */
+    color: #1CB698; /* Color del logo */
+    text-decoration: none; /* Sin subrayado */
 }
 .contenedor-header header ul{
-    display: flex;
-    list-style: none;
+    display: flex; /* Elementos de la lista en línea */
+    list-style: none; /* Sin viñetas */
 }
 .contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
+    text-align: none; /* No aplica a 'a', probablemente un error tipográfico, debería ser text-decoration o similar */
+    color: #fff; /* Color de los enlaces de navegación */
+    margin: 0 15px; /* Margen entre enlaces */
+    padding: 3px; /* Relleno interno de los enlaces */
+    transition: .5s; /* Transición suave para efectos hover */
+    text-decoration: none; /* Sin subrayado */
 }
 .contenedor-header header nav ul li a:hover{
-    color: #1CB698;
+    color: #1CB698; /* Color del enlace al pasar el cursor */
 }
 .nav-responsive{
-    background-color: #1CB698;
-    color:#fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
+    background-color: #1CB698; /* Color de fondo del botón de menú responsive */
+    color:#fff; /* Color del ícono */
+    padding: 5px 10px; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de tipo puntero */
+    display: none; /* Oculto por defecto, visible en pantallas pequeñas */
 }
-/* SECCION I N I C I O */
+
+/* SECCION INICIO */
 .inicio{
+    /* Fondo con gradiente y imagen de respaldo */
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/fondo.jpg);
-    background-size: cover;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
+    background-size: cover; /* Cubre todo el contenedor */
+    height: 100vh; /* Altura igual a la altura de la ventana gráfica */
+    color: #fff; /* Color de texto principal */
+    display: flex; /* Habilita Flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 .inicio .contenido-banner{
-    padding: 20px;
-    background-color: #1e2326;
-    max-width: 350px;
-    margin: 80px auto 40px;
-    text-align: center;
-    border-radius: 40px;
-    position: relative;
-    z-index: 2;
+    padding: 20px; /* Relleno interno */
+    background-color: #1e2326; /* Color de fondo del banner */
+    max-width: 350px; /* Ancho máximo del banner */
+    margin: 80px auto 40px; /* Márgenes para centrar y posicionar */
+    text-align: center; /* Texto centrado */
+    border-radius: 40px; /* Bordes muy redondeados */
+    position: relative; /* Necesario para z-index si se requiere */
+    z-index: 2; /* Asegura que esté sobre otros elementos si es necesario */
 }
 .inicio .contenido-banner img{
-    margin-top: 20px;
-    border: 10px solid #1CB698;
-    display: block;
-    width: 70%;
-    margin: 0 auto 20px;
-    border-radius: 100%;
-    position: relative;
-    z-index: 3;
+    margin-top: 20px; /* Margen superior de la imagen */
+    border: 10px solid #1CB698; /* Borde de la imagen */
+    display: block; /* Para aplicar márgenes correctamente */
+    width: 70%; /* Ancho de la imagen relativo al contenedor */
+    margin: 0 auto 20px; /* Centrado horizontal y margen inferior */
+    border-radius: 100%; /* Imagen completamente redonda */
+    position: relative; /* Necesario para z-index */
+    z-index: 3; /* Imagen por encima del banner para el efecto del borde */
 }
 .inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 42px;
-    font-family: 'Righteous';
+    margin-top: 40px; /* Margen superior del título */
+    font-size: 42px; /* Tamaño de fuente del título */
+    font-family: 'Righteous'; /* Fuente específica para el título */
 }
 .inicio .contenido-banner h2{
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 15px; /* Tamaño de fuente del subtítulo */
+    font-weight: normal; /* Peso de fuente normal */
 }
 .inicio .contenido-banner .redes a{
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
+    color: #fff; /* Color de los iconos de redes sociales */
+    display: inline-block; /* Para aplicar dimensiones y márgenes */
+    text-decoration: none; /* Sin subrayado */
+    border: 1px solid #fff; /* Borde de los iconos */
+    border-radius: 100%; /* Iconos redondos */
+    width: 42px; /* Ancho del icono */
+    height: 42px; /* Altura del icono */
+    line-height: 42px; /* Centra el icono verticalmente */
+    margin: 40px 5px; /* Margen alrededor de los iconos */
+    font-size: 20px; /* Tamaño del icono */
+    transition: .3s; /* Transición suave para hover */
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+    background-color: #1CB698; /* Color de fondo al pasar el cursor */
 }
+
+/* SECCION SOBRE MI */
 .sobremi{
-    background-color: #1e2326;
-    color: #fff;
-    padding: 100px 20px 50px;
-    position: relative;
-    z-index: 1;
+    background-color: #1e2326; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 100px 20px 50px; /* Relleno superior, horizontal, inferior */
+    position: relative; /* Necesario para z-index si se solapa */
+    z-index: 1; /* Control de apilamiento */
 }
 .sobremi .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1100px; /* Ancho máximo del contenido */
+    margin: auto; /* Centrado automático */
 }
 .sobremi h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-
+    font-size: 48px; /* Tamaño del título de sección */
+    font-family: 'Righteous'; /* Fuente específica */
+    text-align: center; /* Título centrado */
+    padding: 20px 0; /* Relleno vertical */
 }
 .sobremi .contenido-seccion p{
-    font: 18px;
-    line-height: 22px;
-    margin-bottom: 20px;
+    font: 18px; /* Tamaño de fuente del párrafo (debería ser font-size) */
+    line-height: 22px; /* Altura de línea */
+    margin-bottom: 20px; /* Margen inferior */
 }
 .sobremi .contenido-seccion p span{
-    color: #1CB698;
-    font-weight: bold;
+    color: #1CB698; /* Color para texto resaltado */
+    font-weight: bold; /* Texto en negrita */
 }
 .sobremi .fila{
-    display: flex;
+    display: flex; /* Habilita Flexbox para las columnas */
 }
-.sobremi .fila .col
-{
-    width: 50%;
+.sobremi .fila .col{
+    width: 50%; /* Cada columna ocupa el 50% del espacio */
 }
 .sobremi .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
+    font-size: 28px; /* Tamaño de subtítulos dentro de las columnas */
+    font-family: 'Righteous'; /* Fuente específica */
+    margin-bottom: 25px; /* Margen inferior */
 }
 .sobremi .fila .col ul{
-    list-style: none;
+    list-style: none; /* Sin viñetas */
 }
 .sobremi .fila .col ul li{
-    margin: 12px 0;
+    margin: 12px 0; /* Margen vertical entre elementos de la lista */
 }
 .sobremi .fila .col ul li strong{
-    display: inline-block;
-    color: #1CB698;
-    width: 130px;
+    display: inline-block; /* Para aplicar ancho */
+    color: #1CB698; /* Color del texto "strong" */
+    width: 130px; /* Ancho fijo para etiquetas */
 }
 .sobremi .fila .col ul li span{
-    background-color: #1CB698;
-    padding: 3px;
-    font-weight: bold;
-    border-radius: 5px;
+    background-color: #1CB698; /* Fondo para el valor del dato personal */
+    padding: 3px; /* Relleno interno */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 5px; /* Bordes redondeados */
 }
 .sobremi .fila .col .contenedor-intereses{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
 }
 .sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
-    background-color: #252A2E;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1CB698;
+    width: 100px; /* Ancho de cada interés */
+    height: 100px; /* Altura de cada interés */
+    background-color: #252A2E; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0 15px 15px 0; /* Márgenes */
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Elementos internos en columna */
+    align-items: center; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+    transition: .3s; /* Transición para hover */
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698; /* Color de fondo al pasar el cursor */
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 30px; /* Tamaño del ícono de interés */
+    margin-bottom: 10px; /* Margen inferior del ícono */
 }
-.sobremi button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
+/* Estilo para el botón de descarga de CV y otros botones similares */
+.sobremi button, .contacto button{ /* Aplicado a botones en "sobremi" y "contacto" */
+    cursor: pointer; /* Cursor de tipo puntero */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #fff; /* Borde blanco */
+    width: fit-content; /* Ancho se ajusta al contenido */
+    display: block; /* Elemento de bloque */
+    margin: 20px auto; /* Centrado horizontal y margen vertical */
+    padding: 10px 22px; /* Relleno interno */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #fff; /* Color de texto */
+    position: relative; /* Necesario para el efecto overlay */
+    z-index: 10; /* Por encima de otros elementos si es necesario */
 }
-.sobremi button .overlay{
-    position: absolute;
+.sobremi button .overlay, .contacto button .overlay{ /* Overlay para efecto hover en botones */
+    position: absolute; /* Posición absoluta respecto al botón */
     top: 0;
     left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1CB698;
-    z-index: -1;
-    transition: 1s;
+    width: 0; /* Ancho inicial cero para la animación */
+    height: 100%; /* Altura completa */
+    background-color: #1CB698; /* Color del overlay */
+    z-index: -1; /* Detrás del texto del botón */
+    transition: 1s; /* Duración de la animación */
 }
-.sobremi button:hover .overlay{
-    width: 100%;
+.sobremi button:hover .overlay, .contacto button:hover .overlay{ /* Efecto al pasar el cursor sobre el botón */
+    width: 100%; /* Ancho completo del overlay */
 }
-/* SECCION S K I L L S */
+
+/* SECCION SKILLS */
 .skills{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
+    background-color: #252A2E; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 50px 20px; /* Relleno vertical y horizontal */
 }
 .skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1100px; /* Ancho máximo */
+    margin: auto; /* Centrado */
 }
 .skills h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-
+    font-size: 48px; /* Tamaño del título */
+    font-family: 'Righteous'; /* Fuente específica */
+    text-align: center; /* Título centrado */
+    padding: 20px 0; /* Relleno vertical */
 }
 .skills .fila{
-    display: flex;
+    display: flex; /* Habilita Flexbox */
 }
 .skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
+    width: 50%; /* Cada columna ocupa el 50% */
+    padding: 0 20px; /* Relleno horizontal interno */
 }
 .skills .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
+    font-size: 28px; /* Tamaño de subtítulos */
+    font-family: 'Righteous'; /* Fuente específica */
+    margin-bottom: 25px; /* Margen inferior */
 }
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
+.skills .skill > span{ /* Estilo para el nombre de la habilidad */
+    font-weight: bold; /* Texto en negrita */
+    display: block; /* Elemento de bloque */
+    margin-bottom: 10px; /* Margen inferior */
 }
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
+.skills .skill .barra-skill{ /* Contenedor de la barra de progreso */
+    height: 8px; /* Altura de la barra */
+    width: 80%; /* Ancho de la barra */
+    background-color: #131517; /* Color de fondo de la barra (track) */
+    position: relative; /* Necesario para posicionar el progreso y el span del porcentaje */
+    margin-bottom: 30px; /* Margen inferior */
 }
-.skills .skill .progreso{
-    background-color: #1CB698;
-    position: absolute;
+.skills .skill .progreso{ /* Barra de progreso actual (se anima) */
+    background-color: #1CB698; /* Color de la barra de progreso */
+    position: absolute; /* Posición absoluta dentro de .barra-skill */
     top: 0;
     left: 0;
-    height: 8px;
+    height: 8px; /* Altura igual a la de .barra-skill */
 }
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #1CB698;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-}
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
+.skills .skill .barra-skill span{ /* Círculo con el porcentaje */
+    position: absolute; /* Posición absoluta respecto a .barra-skill */
+    height: 40px; /* Altura del círculo */
+    width: 40px; /* Ancho del círculo */
+    background-color: #1CB698; /* Color de fondo del círculo */
+    border-radius: 50px; /* Círculo perfecto */
+    line-height: 40px; /* Centra el texto verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    top: -17px; /* Posiciona el círculo encima de la barra */
+    right: -15px; /* Posiciona el círculo a la derecha de la barra de progreso (se ajustará con JS) */
+    font-size: 14px; /* Tamaño de fuente del porcentaje */
 }
 
+/* ANIMACIONES DE SKILLS */
+/* Estas clases se agregarán dinámicamente mediante JavaScript para iniciar las animaciones */
+
+/* Animación para la barra de habilidad JavaScript: llena la barra del 0% al 75% en 2 segundos */
+.skills .skill .javascript{
+    width: 0%; /* Estado inicial antes de la animación */
+    animation: 2s javascript forwards; /* Nombre, duración, y fill-mode */
+}
+@keyframes javascript {
+    0%{width: 0%;} /* Inicio de la animación */
+    100%{width: 75%;} /* Fin de la animación */
+}
+
+/* Animación para la barra de habilidad HTML & CSS: llena la barra del 0% al 89% en 2 segundos */
 .skills .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
@@ -293,7 +306,8 @@ html{
     100%{width: 89%;}
 }
 
-.skills .skill .photoshop{
+/* Animación para la barra de habilidad Photoshop (o MYSQL según HTML): llena la barra del 0% al 95% en 2 segundos */
+.skills .skill .photoshop{ /* La clase 'photoshop' puede referirse a MYSQL si el HTML fue actualizado */
     width: 0%;
     animation: 2s photoshop forwards;
 }
@@ -302,7 +316,8 @@ html{
     100%{width: 95%;}
 }
 
-.skills .skill .wordpress{
+/* Animación para la barra de habilidad Wordpress (o PHP según HTML): llena la barra del 0% al 81% en 2 segundos */
+.skills .skill .wordpress{ /* La clase 'wordpress' puede referirse a PHP si el HTML fue actualizado */
     width: 0%;
     animation: 2s wordpress forwards;
 }
@@ -311,7 +326,8 @@ html{
     100%{width: 81%;}
 }
 
-.skills .skill .drupal{
+/* Animación para la barra de habilidad Drupal (o PYTHON según HTML): llena la barra del 0% al 55% en 2 segundos */
+.skills .skill .drupal{ /* La clase 'drupal' puede referirse a PYTHON si el HTML fue actualizado */
     width: 0%;
     animation: 2s drupal forwards;
 }
@@ -320,6 +336,7 @@ html{
     100%{width: 55%;}
 }
 
+/* Animación para la barra de habilidad Comunicación: llena la barra del 0% al 80% en 2 segundos */
 .skills .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;
@@ -329,6 +346,7 @@ html{
     100%{width: 80%;}
 }
 
+/* Animación para la barra de habilidad Trabajo en Equipo: llena la barra del 0% al 70% en 2 segundos */
 .skills .skill .trabajo{
     width: 0%;
     animation: 2s trabajo forwards;
@@ -338,6 +356,7 @@ html{
     100%{width: 70%;}
 }
 
+/* Animación para la barra de habilidad Creatividad: llena la barra del 0% al 99% en 2 segundos */
 .skills .skill .creatividad{
     width: 0%;
     animation: 2s creatividad forwards;
@@ -347,6 +366,7 @@ html{
     100%{width: 99%;}
 }
 
+/* Animación para la barra de habilidad Dedicación: llena la barra del 0% al 65% en 2 segundos */
 .skills .skill .dedicacion{
     width: 0%;
     animation: 2s dedicacion forwards;
@@ -356,6 +376,7 @@ html{
     100%{width: 65%;}
 }
 
+/* Animación para la barra de habilidad Project Management: llena la barra del 0% al 94% en 2 segundos */
 .skills .skill .proyect{
     width: 0%;
     animation: 2s proyect forwards;
@@ -364,234 +385,215 @@ html{
     0%{width: 0%;}
     100%{width: 94%;}
 }
+
 /* SECCION CURRICULUM */
 .curriculum{
-    background-color: #1e2326;
-    color: #fff;
-    padding: 50px 20px;
+    background-color: #1e2326; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 50px 20px; /* Relleno */
 }
-
 .curriculum .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1100px; /* Ancho máximo */
+    margin: auto; /* Centrado */
 }
 .curriculum h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-
+    font-size: 48px; /* Tamaño del título */
+    font-family: 'Righteous'; /* Fuente específica */
+    text-align: center; /* Título centrado */
+    padding: 20px 0; /* Relleno vertical */
 }
 .curriculum .fila{
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Habilita Flexbox */
+    justify-content: space-between; /* Espacio entre columnas */
 }
 .curriculum .fila .col{
-    width: 49%;
-    padding: 0 20px;
+    width: 49%; /* Ancho de cada columna (ligeramente menos del 50% para espaciado si es necesario) */
+    padding: 0 20px; /* Relleno horizontal interno */
 }
 .curriculum .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
+    font-size: 28px; /* Tamaño de subtítulos (Educación, Experiencia) */
+    font-family: 'Righteous'; /* Fuente específica */
+    margin-bottom: 25px; /* Margen inferior */
 }
 .curriculum .fila .izquierda{
-    border-right: 2px solid #252A2E;
+    border-right: 2px solid #252A2E; /* Borde derecho para la columna izquierda */
 }
 .curriculum .fila .derecha{
-    border-left: 2px solid #252A2E;
+    border-left: 2px solid #252A2E; /* Borde izquierdo para la columna derecha */
 }
-.curriculum .fila .item{
-    padding: 25px;
-    margin-bottom: 30px;
-    background-color: #252A2E;
-    position: relative;
+.curriculum .fila .item{ /* Estilo para cada elemento de educación o experiencia */
+    padding: 25px; /* Relleno interno */
+    margin-bottom: 30px; /* Margen inferior */
+    background-color: #252A2E; /* Color de fondo del item */
+    position: relative; /* Necesario para los conectores */
 }
 .curriculum .fila .item h4{
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 20px; /* Tamaño del título del item (ej. nombre del curso) */
+    margin-bottom: 10px; /* Margen inferior */
 }
-.curriculum .fila .item .casa{
-    color: #1CB698;
-    font-size: 22px;
-    font-weight: bold;
-    display: block;
+.curriculum .fila .item .casa{ /* Nombre de la institución o empresa */
+    color: #1CB698; /* Color distintivo */
+    font-size: 22px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    display: block; /* Elemento de bloque */
 }
-.curriculum .fila .item .fecha{
-    display: block;
-    color: #1CB698;
-    margin-bottom: 10px;
+.curriculum .fila .item .fecha{ /* Fecha del item */
+    display: block; /* Elemento de bloque */
+    color: #1CB698; /* Color distintivo */
+    margin-bottom: 10px; /* Margen inferior */
 }
 .curriculum .fila .item p{
-    line-height: 24px;
+    line-height: 24px; /* Altura de línea para la descripción */
 }
-.curriculum .fila .izq{
-    border-right: 2px solid #1CB698;
-    margin-right: 20px;
+.curriculum .fila .izq{ /* Estilo específico para items en la columna izquierda */
+    border-right: 2px solid #1CB698; /* Borde derecho de color para el efecto timeline */
+    margin-right: 20px; /* Margen para separar del conector */
 }
-.curriculum .fila .der{
-    border-left: 2px solid #1CB698;
-    margin-left: 20px;
+.curriculum .fila .der{ /* Estilo específico para items en la columna derecha */
+    border-left: 2px solid #1CB698; /* Borde izquierdo de color para el efecto timeline */
+    margin-left: 20px; /* Margen para separar del conector */
 }
-.curriculum .fila .item .conectori{
+/* Conectores para la línea de tiempo en la sección curriculum */
+.curriculum .fila .item .conectori{ /* Conector izquierdo */
+    height: 2px; /* Altura de la línea conectora */
+    background-color: #1CB698; /* Color de la línea */
+    width: 47px; /* Ancho de la línea (hasta el borde de la columna) */
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Centrado verticalmente */
+    right: -47px; /* Posicionado fuera del item, hacia la derecha */
+    z-index: 5; /* Por encima de otros elementos si es necesario */
+}
+.curriculum .fila .item .conectori .circuloi{ /* Círculo del conector izquierdo */
+    display: block; /* Elemento de bloque */
+    height: 10px; /* Altura del círculo */
+    width: 10px; /* Ancho del círculo */
+    border-radius: 50%; /* Círculo perfecto */
+    background-color: #1CB698; /* Color del círculo */
+    float: right; /* Alineado a la derecha del conector */
+    position: relative; /* Para ajustar posición */
+    bottom: 4px; /* Ajuste vertical para centrar con la línea */
+}
+.curriculum .fila .item .conectord{ /* Conector derecho */
     height: 2px;
     background-color: #1CB698;
     width: 47px;
     position: absolute;
     top: 50%;
-    right: -47px;
+    left: -47px; /* Posicionado fuera del item, hacia la izquierda */
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+.curriculum .fila .item .conectord .circulod{ /* Círculo del conector derecho */
     display: block;
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background-color: #1CB698;
-    float: right;
+    float: left; /* Alineado a la izquierda del conector */
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
-    height: 2px;
-    background-color: #1CB698;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    left: -47px;
-    z-index: 5;
-}
-.curriculum .fila .item .conectord .circulod{
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #1CB698;
-    float: left;
-    position: relative;
-    bottom: 4px;
-}
+
 /* SECCION PORTFOLIO */
 .portfolio{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
+    background-color: #252A2E; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 50px 20px; /* Relleno */
 }
 .portfolio .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1100px; /* Ancho máximo */
+    margin: auto; /* Centrado */
 }
 .portfolio h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
+    font-size: 48px; /* Tamaño del título */
+    font-family: 'Righteous'; /* Fuente específica */
+    text-align: center; /* Título centrado */
+    padding: 20px 0; /* Relleno vertical */
 }
 .portfolio .galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los proyectos se envuelvan */
+    justify-content: space-around; /* Distribuye espacio alrededor de los proyectos */
 }
-.portfolio .galeria .proyecto{
-    position: relative;
-    max-width: 340px;
-    height: fit-content;
-    margin: 10px;
-    cursor: pointer;
+.portfolio .galeria .proyecto{ /* Estilo para cada proyecto en la galería */
+    position: relative; /* Necesario para el overlay */
+    max-width: 340px; /* Ancho máximo del proyecto */
+    height: fit-content; /* Altura se ajusta al contenido */
+    margin: 10px; /* Margen alrededor de cada proyecto */
+    cursor: pointer; /* Cursor de tipo puntero */
 }
 .portfolio .galeria .proyecto img{
-    width: 100%;
-    display: block;
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor del proyecto */
+    display: block; /* Para evitar espacio extra debajo de la imagen */
 }
-.portfolio .galeria .proyecto .overlay{
-    position: absolute;
+.portfolio .galeria .proyecto .overlay{ /* Overlay que aparece al pasar el cursor sobre un proyecto */
+    position: absolute; /* Posición absoluta respecto al proyecto */
     top: 0;
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: center; /* Texto centrado */
+    /* Fondo con gradiente semitransparente */
     background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
-    opacity: 0;
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Contenido del overlay en columna */
+    justify-content: center; /* Centrado vertical */
+    transition: 1s; /* Duración de la transición para la opacidad */
+    font-size: 18px; /* Tamaño de fuente del texto del overlay */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    opacity: 0; /* Inicialmente invisible */
 }
 .portfolio .galeria .proyecto .overlay h3{
-    margin-bottom: 20px;
-    transition: 1s;
+    margin-bottom: 20px; /* Margen inferior del título del proyecto */
+    transition: 1s; /* Transición para el margen (efecto de movimiento) */
 }
 .portfolio .galeria .proyecto .overlay:hover{
-    opacity: 1;
+    opacity: 1; /* Hace visible el overlay al pasar el cursor */
 }
 .portfolio .galeria .proyecto .overlay:hover h3{
-    margin-bottom: 0px;
+    margin-bottom: 0px; /* Ajusta el margen del título en hover */
 }
+
 /* SECCION CONTACTO */
 .contacto{
-    background-image: url(img/contact_bg.png);
-    background-color: #1e2326;
-    color: #fff;
-    padding: 50px 0;
+    background-image: url(img/contact_bg.png); /* Imagen de fondo */
+    background-color: #1e2326; /* Color de fondo de respaldo */
+    color: #fff; /* Color de texto */
+    padding: 50px 0; /* Relleno vertical */
 }
 .contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1100px; /* Ancho máximo */
+    margin: auto; /* Centrado */
 }
 .contacto h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
+    font-size: 48px; /* Tamaño del título */
+    font-family: 'Righteous'; /* Fuente específica */
+    text-align: center; /* Título centrado */
+    padding: 20px 0; /* Relleno vertical */
 }
 .contacto .fila{
-    display: flex;
+    display: flex; /* Habilita Flexbox para las columnas */
 }
 .contacto .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
+    width: 50%; /* Cada columna ocupa el 50% */
+    padding: 10px; /* Relleno interno */
+    position: relative; /* Para elementos posicionados absolutamente dentro */
 }
+/* Estilos para campos de entrada y área de texto del formulario */
 .contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
-    font-size: 18px;
+    display: block; /* Elementos de bloque */
+    width: 100%; /* Ancho completo */
+    padding: 18px; /* Relleno interno */
+    border: none; /* Sin borde */
+    margin-bottom: 20px; /* Margen inferior */
+    background-color: #252A2E; /* Color de fondo de los campos */
+    color: #fff; /* Color del texto introducido */
+    font-size: 18px; /* Tamaño de fuente */
 }
-.contacto button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1CB698;
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
+/* El estilo del botón de contacto ya está definido globalmente con .sobremi button */
+
+.contacto .col img{ /* Estilo para la imagen en la sección de contacto (si la hubiera directamente en .col) */
     width: 100%;
 }
-.contacto .col img{
-    width: 100%;
-}
+/* Estilos para el recuadro de información de contacto (actualmente no visible en el HTML proporcionado) */
 .contacto .col .info{
     position: absolute;
     top: 40%;
@@ -599,7 +601,7 @@ html{
     padding: 20px;
     max-width: 350px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Técnica para centrar un elemento posicionado absolutamente */
 }
 .contacto .col .info ul{
     list-style: none;
@@ -612,18 +614,20 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
+
+/* ESTILOS DEL FOOTER */
 footer{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 0 30px 0;
-    text-align: center;
-    position: relative;
-    width: 100%;
+    background-color: #252A2E; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 50px 0 30px 0; /* Relleno superior, horizontal, inferior */
+    text-align: center; /* Texto centrado */
+    position: relative; /* Necesario para el botón "arriba" */
+    width: 100%; /* Ancho completo */
 }
 footer .redes{
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Margen inferior para los iconos de redes */
 }
-footer .redes a{
+footer .redes a{ /* Estilo de los iconos de redes sociales en el footer */
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -632,132 +636,157 @@ footer .redes a{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 40px 5px; /* Margen aumentado respecto a los de la sección inicio */
     font-size: 20px;
     transition: .3s;
 }
-footer .arriba{
+footer .arriba{ /* Botón para volver al inicio de la página */
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 18px;
+    background-color: #1CB698; /* Color de fondo */
+    color: #fff; /* Color del icono */
+    position: absolute; /* Posición absoluta respecto al footer */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centrado exacto */
+    top: -25px; /* Posiciona el botón a mitad fuera del footer, en la parte superior */
+    border-radius: 50%; /* Botón redondo */
+    line-height: 50px; /* Centra el icono verticalmente */
+    font-size: 18px; /* Tamaño del icono */
 }
-/* SECCION RESPONSIVE */
+
+/* ESTILOS RESPONSIVE */
+
+/* Ajustes para pantallas de hasta 980px de ancho */
 @media screen and (max-width:980px){
-    nav{
+    nav{ /* Oculta la navegación principal */
         display: none;
     }
-    .nav-responsive{
+    .nav-responsive{ /* Muestra el botón de menú responsive (hamburguesa) */
         display: block;
     }
-    nav.responsive{
+    nav.responsive{ /* Estilos para el menú desplegable responsive */
         display: block;
         position: absolute;
         right: 0;
-        top: 75px;
+        top: 75px; /* Debajo del encabezado */
         background-color: #252A2E;
         width: 180px;
     }
     nav.responsive ul{
-        display: block !important;
+        display: block !important; /* Asegura que la lista se muestre como bloque */
     }
     nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
+        border-bottom: 1px solid #fff; /* Separador entre elementos del menú */
+        padding: 10px 0; /* Relleno vertical */
     }
 }
+
+/* Ajustes para pantallas de hasta 700px de ancho */
 @media screen and (max-width:700px){
+    /* Sección Sobre Mi: las columnas se apilan */
     .sobremi .fila{
-        display: block;
+        display: block; /* Cambia flex a block para apilar columnas */
     }
     .sobremi .fila .col{
-        width: fit-content;
+        width: fit-content; /* Ancho se ajusta al contenido (puede necesitar revisión para diseño deseado) */
     }
 
+    /* Sección Skills: las columnas se apilan */
     .skills .fila{
         display: block;
     }
     .skills .fila .col{
-        width: 100%;
+        width: 100%; /* Columna ocupa todo el ancho */
     }
     .skills .fila .col .barra-skill{
-        width: 100%;
+        width: 100%; /* Barra de skill ocupa todo el ancho */
     }
 
+    /* Sección Curriculum: las columnas se apilan */
     .curriculum .fila{
         display: block;
     }
     .curriculum .fila .col{
-        width: 90%;
+        width: 90%; /* Columna ocupa el 90% (para centrar o dar margen) */
+        margin: 0 auto; /* Centrado de la columna */
+    }
+    .curriculum .fila .derecha{ /* Ajuste de margen para la columna derecha cuando está apilada */
+        margin-left: 0px; /* Originalmente 20px, se quita o ajusta según diseño */
+    }
+     .curriculum .fila .izquierda{
+        margin-right: 0px; /* Se quita el margen derecho para la columna izquierda */
+        border-right: none; /* Se elimina el borde derecho */
     }
     .curriculum .fila .derecha{
-        margin-left: 20px;
+        border-left: none; /* Se elimina el borde izquierdo de la columna derecha */
+    }
+    /* Se ocultan los conectores de la línea de tiempo en pantallas pequeñas */
+    .curriculum .fila .item .conectori,
+    .curriculum .fila .item .conectord {
+        display: none;
     }
 
+
+    /* Sección Portfolio: los proyectos se muestran en una columna */
     .portfolio .galeria{
-        display: block;
+        display: block; /* Cambia flex a block */
         width: 100%;
     }
     .portfolio .galeria .proyecto{
-        max-width: 100%;
+        max-width: 100%; /* Proyecto ocupa todo el ancho */
     }
     .portfolio .galeria .proyecto img{
         width: 100%;
     }
+
+    /* Sección Contacto: las columnas se apilan */
     .contacto .fila{
         display: block;
     }
     .contacto .fila .col{
-        width: 100%;
+        width: 100%; /* Columna ocupa todo el ancho */
     }
 }
 
-/* Estilos para el mapa y contacto */
+/* ESTILOS ADICIONALES PARA EL MAPA Y LA INFORMACIÓN DE CONTACTO (AÑADIDOS POSTERIORMENTE) */
 .map-container {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 25px;
+    position: relative; /* Para posicionar el overlay del mapa */
+    width: 100%; /* Ancho completo */
+    height: 350px; /* Altura del contenedor del mapa */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el mapa no se salga de los bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 25px; /* Margen inferior */
 }
 
-#map {
+#map { /* ID del div donde se renderiza el mapa de Google */
     width: 100%;
     height: 100%;
-    border: none;
+    border: none; /* Sin borde para el iframe del mapa */
 }
 
-.map-overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(28, 182, 152, 0.9);
-    color: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    max-width: 80%;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+.map-overlay { /* Overlay con información sobre el mapa */
+    position: absolute; /* Posicionado sobre el mapa */
+    bottom: 20px; /* Distancia desde abajo */
+    left: 20px; /* Distancia desde la izquierda */
+    background: rgba(28, 182, 152, 0.9); /* Fondo semitransparente */
+    color: white; /* Color de texto */
+    padding: 15px 20px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 80%; /* Ancho máximo del overlay */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra para el overlay */
 }
 
 .map-overlay h3 {
-    margin: 0 0 5px 0;
-    font-size: 1.1em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    margin: 0 0 5px 0; /* Margen del título */
+    font-size: 1.1em; /* Tamaño de fuente */
+    display: flex; /* Para alinear ícono y texto */
+    align-items: center; /* Centrado vertical */
+    gap: 8px; /* Espacio entre ícono y texto */
 }
 
-/* Eliminar estilos no deseados del ícono de ubicación */
+/* Asegura que los estilos globales de íconos no afecten al ícono del mapa si se usa <i> */
 .map-overlay h3 i {
     text-decoration: none !important;
     border: none !important;
@@ -768,71 +797,71 @@ footer .arriba{
 .map-overlay p {
     margin: 0;
     font-size: 0.9em;
-    opacity: 0.9;
+    opacity: 0.9; /* Ligera transparencia para el texto */
 }
 
-.contact-info {
-    background: #252A2E;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.contact-info { /* Contenedor para la información de contacto detallada (teléfono, email) */
+    background: #252A2E; /* Color de fondo */
+    padding: 25px; /* Relleno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 20px;
+.info-item { /* Estilo para cada ítem de información (ej. Teléfono, Email) */
+    display: flex; /* Habilita Flexbox */
+    align-items: flex-start; /* Alinea items al inicio */
+    gap: 15px; /* Espacio entre el ícono y el texto */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
-.info-item:last-child {
+.info-item:last-child { /* Elimina el margen inferior del último ítem */
     margin-bottom: 0;
 }
 
-.info-item i {
-    font-size: 1.5em;
-    color: #1CB698;
-    margin-top: 5px;
-    min-width: 25px;
+.info-item i { /* Estilo para los íconos en la información de contacto */
+    font-size: 1.5em; /* Tamaño del ícono */
+    color: #1CB698; /* Color del ícono */
+    margin-top: 5px; /* Margen superior para alinear con el texto */
+    min-width: 25px; /* Ancho mínimo para mantener alineación */
 }
 
-.info-item h4 {
+.info-item h4 { /* Título del ítem de información (ej. "Teléfono") */
     margin: 0 0 5px 0;
     color: #1CB698;
     font-size: 1em;
 }
 
-.info-item a {
+.info-item a { /* Enlaces en la información de contacto (ej. mailto:, tel:) */
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
     font-size: 0.95em;
-    word-break: break-all;
+    word-break: break-all; /* Evita que enlaces largos rompan el layout */
 }
 
 .info-item a:hover {
-    color: #1CB698;
-    text-decoration: underline;
+    color: #1CB698; /* Color al pasar el cursor */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
-/* Ajustes responsivos para el mapa */
-@media (max-width: 768px) {
+/* Ajustes responsivos específicos para el mapa y la información de contacto */
+@media (max-width: 768px) { /* Para tablets y dispositivos más pequeños */
     .map-container {
-        height: 300px;
+        height: 300px; /* Reduce la altura del mapa */
     }
     
     .map-overlay {
-        bottom: 10px;
+        bottom: 10px; /* Ajusta posición del overlay */
         left: 10px;
-        padding: 10px 15px;
+        padding: 10px 15px; /* Reduce el relleno del overlay */
     }
     
     .contact-info {
-        padding: 20px;
+        padding: 20px; /* Reduce el relleno de la info de contacto */
     }
     
-    .info-item {
+    .info-item { /* Apila el ícono y el texto en pantallas más pequeñas */
         flex-direction: column;
-        gap: 5px;
+        gap: 5px; /* Reduce el espacio */
     }
 }
